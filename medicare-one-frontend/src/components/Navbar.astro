@@ -1,0 +1,9 @@
+<nav class="bg-white shadow-md p-4 flex justify-between">
+  <h1 class="font-bold text-lg text-purple-700">MediCare One</h1>
+  <button 
+    class="text-red-600 font-semibold"
+    onclick="localStorage.removeItem('token'); document.cookie='token=; path=/;'; window.location='/login';"
+  >
+    Cerrar sesión
+  </button>
+</nav>

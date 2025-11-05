@@ -1,0 +1,14 @@
+---
+const { title = "MediCare One" } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proza+Libre" />
+  </head>
+  <body class="font-['Proza Libre'] bg-gray-50">
+    <slot />
+  </body>
+</html>

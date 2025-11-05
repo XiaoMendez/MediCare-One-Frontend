@@ -1,0 +1,8 @@
+---
+const token = Astro.cookies.get("token")?.value;
+
+if (!token) {
+  return Astro.redirect("/login");
+}
+---
+<slot />
